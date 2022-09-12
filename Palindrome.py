@@ -10,3 +10,15 @@ for i,j in zip(i_string,r_string):
             count += 1
     else:
             print('palindrome')
+            
+            
+def pal(string): # AVD
+    left = 0
+    right = len(string)-1
+    
+    while left<right:
+        if string[left] != string[right]:
+            return False
+    return True
+
+
